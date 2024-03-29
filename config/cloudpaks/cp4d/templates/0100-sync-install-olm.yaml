@@ -80,7 +80,7 @@ spec:
               && echo "INFO: Creating OLM objects for a specialized installation." \
               && bin/apply-olm apply-olm \
                   --release=${VERSION} \
-                  --components=${COMPONENTS} \
+                  --components=wkc \
                   --cpd_operator_ns=${PROJECT_CPD_INST_OPERATORS} \
               || result=1
 
