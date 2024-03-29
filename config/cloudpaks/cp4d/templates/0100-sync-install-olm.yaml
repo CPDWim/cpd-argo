@@ -39,7 +39,7 @@ spec:
 
               export KUBECONFIG=/tmp/kubeconfig
               api_url=$(oc get Infrastructure cluster -o jsonpath='{.status.apiServerURL}')
-              oc login "${api_url}" --token="$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)" --insecure-skip-tls-verify \
+              oc login "${api_url}" --token="sha256~7NNQ_TENsAk1U0Nzrea0Xen6RnFbsVqn-cY2AZJIUOE" --insecure-skip-tls-verify \
               || {
                   echo "WARNING: Unable to login to the cluster."
                   exit 1
