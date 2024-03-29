@@ -2,7 +2,7 @@ apiVersion: cpd.ibm.com/v1
 kind: Ibmcpd
 metadata:
 
-  name: ibmcpd-cr
+  name: Ibmcpd-cr
   namespace: cp4denv1-inst
 
 spec:
