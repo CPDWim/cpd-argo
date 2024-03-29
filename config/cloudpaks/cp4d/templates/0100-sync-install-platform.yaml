@@ -69,6 +69,7 @@ spec:
               exit ${result}
 
       restartPolicy: Never
+      serviceAccountName: {{.Values.serviceaccount.argocd_application_controller}}
       
 
   backoffLimit: 2
