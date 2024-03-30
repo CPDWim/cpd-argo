@@ -47,7 +47,7 @@ spec:
           value: "{{.Values.storageclass.rwx.override}}"
         - name: targetRevision
           value: ${ARGOCD_APP_SOURCE_TARGET_REVISION}
-    path: config/cloudpaks/cp-shared/operators
+    path: config/euCPD/cp-shared/operators
     repoURL: {{.Values.repoURL}}
     targetRevision: {{.Values.targetRevision}}
   syncPolicy:
