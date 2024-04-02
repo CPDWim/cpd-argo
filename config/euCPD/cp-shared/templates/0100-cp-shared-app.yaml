@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   creationTimestamp: null
-  name: cp-shared
+  name: cp-shared-app
   namespace: openshift-gitops
   annotations:
     argocd.argoproj.io/sync-wave: "100"
@@ -59,7 +59,7 @@ spec:
           value: "{{.Values.storageclass.rwx.override}}"
         - name: targetRevision
           value: ${ARGOCD_APP_SOURCE_TARGET_REVISION}
-    path: config/cloudpaks/cp-shared
+    path: config/euCPD/cp-shared
     repoURL: {{.Values.repoURL}}
     targetRevision: {{.Values.targetRevision}}
   syncPolicy:
